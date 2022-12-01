@@ -24,6 +24,12 @@ def parse_input_file(path: str):
 
 calories = parse_input_file(path=input_file)
 print(f"Largest number of calories = {max(calories)}")
-sorted_cals = sorted(calories, reverse=True)
-top3_calories_count = sum(sorted_cals[:3])
+
+top3_calories_count = 0
+for i in range(3):
+    max_value = max(calories)
+    top3_calories_count += max_value
+    calories.remove(max_value)
+
+
 print(f"Total calories carried by top 3 = {top3_calories_count}")
