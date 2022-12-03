@@ -14,12 +14,7 @@ def get_priorities(items: str):
     return [get_priority(item) for item in items]
 
 def get_duplicates(c1: str, c2: str):
-    #return c1 and c2 [l for a in A if a in b]
-    duplicates = []
-    for item in c1:
-        if (item in c2) and (item not in duplicates):
-            duplicates.append(item)
-    return duplicates
+    return {item for item in c1 if item in c2}
 
 def get_string_halves(s: str):
     if s == '':
