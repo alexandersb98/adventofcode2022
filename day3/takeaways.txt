@@ -1,0 +1,8 @@
+For the future, think about:
+* next and iter
+* * next(iter(['a', 'b'])) = 'a'
+* string.ascii_lowercase and string.ascii_uppercase
+* enumerate
+* * enumerate(my_list, start=)
+* integer division 
+* * (8 // 3 = 2)
