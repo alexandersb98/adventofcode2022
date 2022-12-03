@@ -22,7 +22,7 @@ def get_duplicates(c1: str, c2: str):
     return duplicates
 
 def get_string_halves(s: str):
-    if s is '':
+    if s == '':
         return '', ''
     splitter = int(len(s) / 2)
     return s[:splitter], s[splitter:]
@@ -38,19 +38,7 @@ def get_compartments(rucksack: str):
 
 # PART 1
 
-rucksacks = get_input_lines(path=test_input_file)
-print(len(rucksacks))
-
-
-priorities = get_priorities('pLPvts')
-print(sum(priorities))
-
-duplicates = get_duplicates('asdFF', 'dFghfF')
-print(duplicates)
-
-c1, c2 = get_compartments('asdf')
-print(f'c1 = "{c1}"')
-print(f'c2 = "{c2}"')
+rucksacks = get_input_lines(path=input_file)
 
 prio_sum = 0
 for r in rucksacks:
