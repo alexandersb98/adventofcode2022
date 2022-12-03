@@ -69,17 +69,7 @@ input_file = r'S:\Dokument\Programmering\Github\alexandersb98\adventofcode2022\d
 
 lines = get_input_lines(path=input_file)
 groups = get_groups(lines)
-
-group1 = groups[1]
-elf_a, elf_b, elf_c = group1
-badge = get_badge(group1)
-print(badge)
-
 badges = get_badges(groups)
-
-print(badges)
-
 priorities = get_priorities(badges)
 total_prio = sum(priorities)
 print(f'Total priority of all badges = {total_prio}')
-    
